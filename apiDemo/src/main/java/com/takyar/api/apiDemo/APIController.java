@@ -32,6 +32,7 @@ public class APIController {
 	}
 	
 	@GetMapping(value = "/quote")
+	
 	public Object  getQuote() {
 		Resource resource = new ClassPathResource("/static/json/quote.json");
 		try {

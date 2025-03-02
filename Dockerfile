@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-ADD target/api-springboot-0.0.1-SNAPSHOT.jar /app/springapi-docker.jar
+ADD /apiDemo/target/apiDemo-0.0.1-SNAPSHOT.jar /app/apiDemo-docker.jar
 
 EXPOSE 8080
 

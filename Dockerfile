@@ -1,9 +1,9 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk-alpine
 
 WORKDIR /app
 
-ADD /apiDemo/target/apiDemo-0.0.1-SNAPSHOT.jar /app/apiDemo-docker.jar
+ADD target/apiDemo-0.0.1-SNAPSHOT.jar /app/apiDemo-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "springapi-docker.jar"]
+ENTRYPOINT ["java", "-jar", "apiDemo-0.0.1-SNAPSHOT.jar"]

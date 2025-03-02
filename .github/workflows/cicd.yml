@@ -38,6 +38,7 @@ jobs:
       uses: docker/build-push-action@v2
       with: 
         context: .
+        dockerfile: Dockerfile
         push: true
         tags: yashitatakyar04/dockerimage:latest, yashitatakyar04/dockerimage:${{github.run_number}}
       
